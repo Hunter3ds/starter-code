@@ -32,6 +32,7 @@ body{
     font-family: "Barlow Condensed", sans-serif;
     font-size: 28px;
     letter-spacing: 4.72px;
+    margin-top: 76px;
 }
 .left__item strong{
     color: rgba(255, 255, 255, 0.250);
@@ -68,4 +69,34 @@ body{
     line-height: 32px;
     height: auto;
     width: 50%;
+
 }
+
+.right__inf{
+    border-top: solid 1px #979797;
+    display: flex;
+    justify-content:flex-start ;
+    width: 50%;
+    gap: 79px;
+    margin-top: 54px;
+    padding-top: 28px;
+}
+.inf__item{
+    width: 100%;
+}
+.inf__item .titular-inf{
+    width: 100%;
+    font-family: "Barlow Condensed", sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    letter-spacing: 2.36px;
+}
+.inf__item .principal-inf{
+    text-transform: uppercase;
+    width: 100%;
+    font-family: "Bellefair", sans-serif;
+    font-style: normal;
+    font-size: 28px;
+
+}
+
