@@ -5,24 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="/Styles/crew.css">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  02 Meet your crew
-
-  Pilot
-  Victor Glover
-
-  Pilot on the first operational flight of the SpaceX Crew Dragon to the 
-  International Space Station. Glover is a commander in the U.S. Navy where 
-  he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
-  station systems flight engineer. 
+  <header>
+    <nav>
+      <img src="../assets/shared/logo.svg">
+      <div class="line"></div>
+      <ul class="menu">
+        <li class="menu__item" id="item__home"><strong> 00 </strong><a href="/index.html">HOME</a></li>
+        <li class="menu__item" id="item__destination"><strong> 01 </strong><a href="/Destination/destination-moon.html">DESTINATION</a></li>
+        <li class="menu__item" id="item__crew"><strong> 02 </strong><a href="./crew-commander.html">CREW</a></li>
+        <li class="menu__item" id="item__technoogy"><strong> 03 </strong><a href="/Technology/technology-vehicle.html">TECHNOLOGY</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="container-left">
+      <span>
+        <strong>02</strong> <p>Meet your crew</p>
+      </span>
+      <div class="left__intro">
+        <p class="intro-name">Pilot</p>
+        <h1>Victor Glover</h1>
+        <p class="intro-inf">Pilot on the first operational flight of the SpaceX Crew Dragon to the 
+          International Space Station. Glover is a commander in the U.S. Navy where 
+          he pilots an F/A-18.He was a crew member of Expedition 64, and served as a 
+          station systems flight engineer.</p>
+      </div>
+      <ul class="left__nav">
+        <li class="nav__item">
+          <a href="./crew-commander.html"><div class="item-div"></div></a>
+        </li>
+        <li class="nav__item">
+          <a href="./crew-specialist.html"><div class="item-div"></div></a>
+        </li>
+        <li class="nav__item">
+          <a href="./crew-pilot.html"><div class="item-div"></div></a>
+        </li>
+        <li class="nav__item">
+          <a href="./crew-engineer.html"><div class="item-div"></div></a>
+        </li>
+      </ul>
+    </section>
+    <section class="container-right">
+        <img class="right__img" src="/assets/crew/image-victor-glover.png">
+    </section>
+  </main> 
 </body>
 </html>
