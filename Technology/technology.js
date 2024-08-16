@@ -1,18 +1,21 @@
-var botoes = document.querySelectorAll(".nav__button")
-var button = document.querySelector("#b1")
+var botoes = document.querySelectorAll(".nav__button");
 
-button.style.backgroundColor = 'white';
-button.style.color = "black";
+let button1 = document.querySelector("#b1");
 
-botoes.forEach(botao => {
-    botao.addEventListener("click", function(){
-        botao.forEach(b => {
-            b.style.backgroundColor = "";
-            b.style.color = "";
-        alert("aqui");
-    })
-        botao.style.backgroundColor = 'white';
-        botao.style.color = 'black';
-    })
+button1.addEventListener('click', function(){
+    window.location = './technology-vehicle.html'; 
+});
 
+let button2 = document.querySelector('#b2');
+
+button2.addEventListener('click', function(){
+    window.location = './technology-spaceport.html'; 
 })
+
+let button3 = document.querySelector('#b3');
+
+button3.addEventListener('click', function(){
+    window.location = './technology-capsule.html' 
+})
+
+

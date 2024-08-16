@@ -53,7 +53,10 @@ nav{
 }
 .menu__item{
     margin: 25px;
-    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 11px;
 }
 .menu__item a{
     text-decoration: none;

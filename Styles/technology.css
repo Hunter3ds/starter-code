@@ -65,6 +65,7 @@ strong{
     font-style: normal;
     font-size: 32px;
     letter-spacing: 2px;
+    cursor: pointer;
 }
 .left-inf{
     display: flex;

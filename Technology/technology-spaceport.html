@@ -6,14 +6,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="/Styles/technology.css">
+  <script defer src="./technology.js"></script>
+
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body>
   <header>
     <nav>
-      <div>
+      
       <img src="/assets/shared/logo.svg">
-      <ul>
+      <div class="line"></div>
+      <ul class="menu">
         <li class="menu__item" id="item__home"><strong> 00 </strong><a href="/index.html"> HOME </a></li>
         <li class="menu__item" id="item__destination"><strong> 01 </strong><a href="/Destination/destination-moon.html"> DESTINATION </a></li>
         <li class="menu__item" id="item__crew"><strong> 02 </strong><a href="/Crew/crew-commander.html"> CREW </a></li>
@@ -26,23 +29,30 @@
         <span>
           <strong>03</strong> <p>SPACE LAUNCH 101</p>
         </span>
-        <ul class="left-nav">
-          <button class="nav__button" id="b1">1</button>
-          <button class="nav__button" id="b2">2</button>
-          <button class="nav__button" id="b3">3</button>
-        </ul>
-        <div class="left-inf">
-          <p>The terminology...</p>
-          <h1>Spaceport</h1>
-          <p>A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
-            by analogy to the seaport for ships or airport for aircraft. Based in the 
-            famous Cape Canaveral, our spaceport is ideally situated to take advantage 
-            of the Earth’s rotation for launch.</p>
+        <div class="left-menu">
+          <ul class="left-nav">
+            <button class="nav__button" id="b1">1</button>
+            <button class="nav__button" id="b2">2</button>
+            <button class="nav__button" id="b3">3</button>
+          </ul>
+          <div class="left-inf">
+            <p class="inf__title">The terminology...</p>
+            <h1>Spaceport</h1>
+            <p class="inf__principal">A spaceport or cosmodrome is a site for launching (or receiving) spacecraft, 
+              by analogy to the seaport for ships or airport for aircraft. Based in the 
+              famous Cape Canaveral, our spaceport is ideally situated to take advantage 
+              of the Earth’s rotation for launch.</p>
+          </div>
         </div>
       </section>
       <section class="container-right">
         <img src="/assets/technology/image-launch-vehicle-portrait.jpg">
       </section>
   </main>
+  <script>
+    let  button2 =  document.querySelector('#b2');
+    button2.style.backgroundColor = 'white';
+    button2.style.color = 'black';
+  </script>
 </body>
 </html>
