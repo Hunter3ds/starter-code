@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 
+@media (min-width: 1240px){
 :root{
     --azulEscuro: #0B0D17;
     --azulClaro: #D0D6F9;
@@ -72,7 +73,7 @@ main{
     font-family: 'Barlow Condensed', sans-serif;
     font-style: regular;
     font-weight: 100;
-
+    flex-wrap: wrap;
 }
 .main-container__left{
     width: 25%;
@@ -136,4 +137,54 @@ main{
     letter-spacing: 7px;
     font-size: 40px;
 }
+}
+@media (max-width: 769px){
 
+}
+@media (max-width: 469px){
+    body{
+        background: url('/assets/home/background-home-mobile.jpg');
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+    .line{
+        display: none;
+    }
+    .menu__item{
+        border-bottom: none;
+    }
+    .main-container__left{
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-container__left p{
+        font-style: normal;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        font-weight: 100;
+        text-align: center;
+        width: 327px;
+    }
+    .main-container__left h1{
+        font-family: "Bellefair", sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 80px;
+        line-height: 100px;
+        margin: 0;
+    }
+    .left__p{
+        font-family: 'Barlow', sans-serif;
+        font-style: normal;
+        font-weight: 100;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+
+}
