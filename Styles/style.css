@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap');
 
-@media (min-width: 1240px){
+
 :root{
     --azulEscuro: #0B0D17;
     --azulClaro: #D0D6F9;
@@ -104,10 +104,6 @@ main{
     margin-top: 20px;
 }
 .left__p{
-    width: 444px;
-    height: 128px;
-}
-.left__p p{
     font-family: 'Barlow', sans-serif;
     font-style:regular;
     font-size:14px;
@@ -137,79 +133,146 @@ main{
     letter-spacing: 7px;
     font-size: 40px;
 }
-}
-@media (min-width: 769px){
-body{
-    background: url('/assets/home/background-home-tablet.jpg');
-}
-}
-@media (min-width: 469px){
+
+@media (max-width: 769px){
+    html{
+        overflow-x: hidden;
+    }
     body{
-        background: url('/assets/home/background-home-mobile.jpg');
-        background-position: bottom;
-        background-repeat: no-repeat;
+        background: url('/assets/home/background-home-tablet.jpg');
         background-size: cover;
-        height: 100vh;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    nav{
+        width: 95%;
+        justify-content: space-between;
+        margin: 0;
     }
     .line{
         display: none;  
     }
+    .menu{
+        justify-content: center;
+        backdrop-filter: none;
+        background-color: rgba(97, 97, 97, 0.15);
+        overflow-x: hidden;
+        width: 65%;
+        padding: 0;
+        gap: 30px;
+    }
+    .menu__item{
+        justify-content: space-around;
+        margin: 0;
+        border-bottom: none;
+        font-size: 14px;
+        letter-spacing: 2.36px;
+    }
+    #item__home{
+        border: 0 !important;
+    }
+    #item__home a{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        border-bottom: solid 4px;
+    }
+
+    .menu__item strong{
+        visibility: hidden;
+    }
+    main{
+        width: ;
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 82px;
+        margin-bottom: 82px;
+    }
+    .main-container__left{
+        width: auto;
+        margin-top: 0;
+        text-align: center;
+        border: none;
+        width: 327px;
+        margin: 106px ;
+        align-items: center;
+    }
+    #left__p1{
+        font-size: 18px;
+    }
+    .main-container__left h1{
+        width: 100%;
+        font-size: 150px;
+
+    }
+    #left__p2{
+        font-size: 17px ;
+        line-height: 21px;
+        width: 100%;
+    }
+    .main-container__right{
+        margin: 0;
+    }
+}
+
+@media (max-width: 469px){
+    html{
+        overflow-x: hidden;
+    }
+    body{
+        background: url('/assets/home/background-home-mobile.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+    }
+    .line{
+        display: none;  
+    }
+    .menu{
+        overflow-x: hidden;
+    }
     .menu__item{
         border-bottom: none;
     }
-    .main-container__left{
-        color: white;
-        display: flex;
+    main{
+        height: auto;
         align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        gap: 82px;
+        margin-bottom: 82px;
     }
-    .main-container__left p{
-        font-style: normal;
-        font-family: 'Barlow Condensed', sans-serif;
-        font-size: 16px;
-        font-weight: 100;
+    .main-container__left{
+        width: 100%;
+        margin-top: 0;
         text-align: center;
+        border: none;
         width: 327px;
+        /* margin: 58px 24px 0 24px; */
+        align-items: center;
+    }
+    #left__p1{
+        font-size: 18px;
     }
     .main-container__left h1{
-        font-family: "Bellefair", sans-serif;
-        font-style: normal;
-        font-weight: 100;
+        width: 100%;
         font-size: 80px;
-        line-height: 100px;
-        margin: 0;
+
     }
-    .left__p{
-        font-family: 'Barlow', sans-serif;
-        font-style: normal;
-        font-weight: 100;
-        font-size: 15px;
-        line-height: 25px;
-        text-align: center;
+    #left__p2{
+        font-size: 17px ;
+        line-height: 21px;
+        width: 100%;
     }
     .main-container__right{
-        background-color: aquamarine;
-        width: 274px;
-        height: 274px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        color: black;
-        border-radius: 50%;
-        margin-left: 17%;
-        margin-top:13%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 0;
     }
-    .main-container__right h2{
-        font-family: "Bellefair", serif;
-        font-weight: 150;
-        font-style: normal;
-        color: var(--azulEscuro);
-        letter-spacing: 7px;
-        font-size: 40px;
-    }
-
 }
